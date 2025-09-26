@@ -93,3 +93,11 @@ h2 {
 .product-description {
   line-height: 1.5;
 }
+
+.cart-btn:hover {
+  cursor: pointer;
+}
+
+.cart-btn:active {
+  background-color: hsl(158, 42%, 18%);
+}
