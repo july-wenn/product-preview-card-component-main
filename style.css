@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
 }
 
 body {
@@ -19,25 +20,76 @@ body {
 
 /* responsive image */
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .design {
   position: absolute;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 1;
   width: 375px;
 }
 
 .card {
   width: 350px;
   background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .card-body {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 h2 {
   font-family: "Frances", serif;
+}
+
+.product-type {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-name {
+  font-family: frances;
+  color: black;
+  font-size: 2.3em;
+  line-height: 1;
+}
+
+.price-old {
+  text-decoration: line-through;
+}
+
+.price-new {
+  color: hsl(158, 36%, 37%);
+  font-family: "Frances", serif;
+  font-size: 2.3em;
+  font-weight: 700;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.cart-btn {
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  color: white;
+  height: 3em;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  font-weight: 600;
+}
+
+.product-description {
+  line-height: 1.5;
 }
