@@ -104,6 +104,10 @@ h2 {
 .desktop-image {
   display: none;
 }
+.mobile-image {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   .card {
     display: flex;
@@ -111,5 +115,10 @@ h2 {
   }
   .mobile-image {
     display: none;
+  }
+
+  .desktop-image {
+    width: 300px;
+    display: block;
   }
 }
